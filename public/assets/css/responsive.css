@@ -1,0 +1,837 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .hero-content-right {
+        padding: 30px;
+    }
+
+    .footer-1 h1 {
+        font-size: 40px;
+    }
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .hero-content-left h1 {
+        font-size: 80px;
+    }
+
+    .hero-content-right {
+        padding: 30px;
+        margin: 275px 30px 0 30px;
+    }
+
+    .hero-content-right-box h2 {
+        font-size: 24px;
+    }
+
+    .subscription-form-1 input[type="email"] {
+        padding: 10px 5px;
+    }
+
+    .subscription-form-1 input[type="submit"] {
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+
+    .we-help-step-content h2 {
+        font-size: 22px;
+    }
+
+    .we-help-step-content {
+        left: 30px;
+    }
+
+    .single-latest-post {
+        padding: 20px;
+    }
+
+    .driving-growth-title h2 {
+        font-size: 28px;
+    }
+
+    .footer-1 h1 {
+        font-size: 32px;
+    }
+
+    .footer-2 p span {
+        margin-left: 15px;
+    }
+
+    .we-help-title h1 {
+        font-size: 32px;
+    }
+
+    .brand-voice-left h1 {
+        font-size: 35px;
+    }
+
+    .mainmenu ul li a {
+        margin-left: 15px;
+    }
+    .work-with-us-left-content h3 {
+        font-size: 22px;
+        line-height: normal;
+    }
+    
+    .work-with-us-left-content p {
+        font-size: 17px;
+        line-height: normal;
+    }
+    .work-with-us-left-content:after{
+        height: 100%;
+    }
+    .about-hero-content h1 {
+        font-size: 80px;
+    }
+    .blog-hero-content h1 {
+        font-size: 100px;
+    }
+    
+    .blog-hero-content {
+        padding-top: 80px;
+    }
+    .crisptv-events-content h1 {
+        font-size: 50px;
+        line-height: normal;
+    }
+    .comming-sson-content strong {
+        font-size: 60px;
+    }
+    
+    .comming-sson-content {
+        padding-top: 100px;
+    }
+    .projects-hero-content h1 {
+        font-size: 36px;
+        line-height: normal;
+    }
+    
+    .projects-hero-content h3 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .what-we-do-hero-left h1 {
+        font-size: 50px;
+        line-height: normal;
+    }
+    
+    .our-services-title-content h1 {
+        font-size: 50px;
+        line-height: normal;
+    }
+    
+    .counter-number span {
+        font-size: 50px;
+    }
+    
+    .our-services-single-item {
+        padding: 20px;
+    }
+    .academy-hero-content-left h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+    
+    .employable-content-left h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+    
+    .employable-user h3 {
+        font-size: 18px;
+        line-height: normal;
+    }
+    
+    .employable-user img {
+        margin-right: 15px;
+        height: 70px;
+        width: 70px;
+    }
+    
+    .employable-content-right-single span {
+        font-size: 18px;
+    }
+    
+    .single-testimonial-item p {
+        font-size: 30px;
+        line-height: normal;
+    }
+    .get-in-touch-title h1 {
+        font-size: 56px;
+        line-height: normal;
+    }
+    
+    .form-services-btn a {
+        padding: 16px 20px;
+        font-size: 16px;
+        margin-right: 15px;
+    }
+    
+    .contact-page-social-follow-content {
+        padding: 70px 50px;
+    }
+    .team-say-about-crisptv-single-slide {
+        padding: 15px;
+    }
+    
+    .team-say-about-crisptv-single-slide p {
+        font-size: 16px;
+        line-height: normal;
+        font-weight: 400;
+    }
+    
+    .team-user-details img {
+        height: 50px !important;
+        width: 50px !important;
+    }
+    
+    .team-user-details h3 {
+        font-size: 16px;
+    }
+    
+    .boundaries-content h1 {
+        font-size: 36px;
+        line-height: normal;
+    }
+    .careers-hero-area-content h1 {
+        font-size: 60px;
+    }
+    .modal-dialog {
+        width: 90%;
+    }
+    .modal-header.modal-header-content {
+        padding: 100px 50px 50px 50px;
+    }
+    
+    .modal-body {
+        padding: 50px;
+    }
+
+}
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-content-left {
+        padding-top: 230px;
+    }
+
+    .hero-content-left h1 {
+        font-size: 60px;
+    }
+
+    .hero-content-left p {
+        font-size: 18px;
+    }
+
+    .hero-content-right {
+        margin: 30px 50px 0 0px;
+    }
+
+    .brand-voice-left {
+        padding-top: 40px;
+    }
+
+    .brand-voice-left a.button-explore {
+        margin-top: 30px;
+    }
+
+    .we-help-step-1,
+    .we-help-step-2,
+    .we-help-step-3 {
+        margin-bottom: 40px;
+    }
+
+    .we-help-step-5 {
+        margin-bottom: 0;
+    }
+
+    .footer-1 h1 {
+        font-size: 32px;
+    }
+
+    .footer-1 {
+        text-align: center;
+    }
+
+    .footer-menu {
+        text-align: center;
+        padding: 0 0 30px 0;
+    }
+
+    .footer-4 p {
+        text-align: right;
+    }
+
+
+    section.footer-area {
+        padding: 80px 0 20px 0;
+    }
+    .mainmenu {
+        display: none;
+    }
+    .about-hero-content h1 {
+        font-size: 80px;
+    }
+    .work-with-us-left-content:after{
+        height: 100%;
+    }
+    .work-with-us-right-content {
+        margin-bottom: 50px;
+    }
+    .blog-hero-content h1 {
+        font-size: 100px;
+    }
+    
+    .blog-hero-content {
+        padding-top: 80px;
+    }
+    .crisptv-events-content h1 {
+        font-size: 50px;
+        line-height: normal;
+    }
+    .comming-sson-content strong {
+        font-size: 60px;
+    }
+    
+    .comming-sson-content {
+        padding-top: 100px;
+    }
+    .projects-hero-content h1 {
+        font-size: 36px;
+        line-height: normal;
+    }
+    
+    .projects-hero-content h3 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .projects-hero-area{
+        height: auto !important;
+    }
+    .project-single-post-text{
+        padding-left: 0 !important;
+    }
+    .project-single-post-img{
+        margin-bottom: 30px;
+    }
+    .projects-single-post{
+        margin-bottom: 30px;
+    }
+    .what-we-do-hero-left h1 {
+        font-size: 50px;
+        line-height: normal;
+    }
+    
+    .our-services-title-content h1 {
+        font-size: 50px;
+        line-height: normal;
+    }
+    
+    .counter-number span {
+        font-size: 50px;
+    }
+    
+    .our-services-single-item {
+        padding: 20px;
+    }
+    .what-we-do-hero-right-img {
+        width: 100%;
+    }
+    
+    .what-we-do-hero-right {
+        position: unset;
+    }
+    
+    .what-we-do-hero-left img {
+        position: unset;
+        margin: 20px 0;
+    }
+    
+    section.what-we-do-hero-area {
+        text-align: center;
+        background:linear-gradient(to top, #CBD4DB 50%, #fff 50%)
+    }
+    
+    .our-services-title-content {
+        padding: 0 0 35px 0;
+    }
+    
+    section.our-services-area {
+        text-align: center;
+    }
+    .academy-hero-content-left h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+    
+    .employable-content-left h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+    
+    .employable-user h3 {
+        font-size: 18px;
+        line-height: normal;
+    }
+    
+    .employable-user img {
+        margin-right: 15px;
+        height: 70px;
+        width: 70px;
+    }
+    
+    .employable-content-right-single span {
+        font-size: 18px;
+    }
+    
+    .single-testimonial-item p {
+        font-size: 30px;
+        line-height: normal;
+    }
+    section.academy-hero-area {
+        text-align: center;
+        padding: 50px 0;
+    }
+    
+    section.employable-area {
+        padding: 70px 0;
+        text-align: center;
+    }
+    
+    .employable-content-left {
+        padding: 0 0 50px 0;
+    }
+    .get-in-touch-title h1 {
+        font-size: 56px;
+        line-height: normal;
+    }
+    
+    .contact-form {
+        padding: 50px;
+    }
+    
+    .form-services-btn a {
+        font-size: 14px;
+        padding: 15px;
+        margin-right: 15px;
+    }
+    
+    .contact-form input[type="submit"] {
+        font-size: 18px;
+        padding: 15px 40px;
+    }
+    
+    .contact-page-social-follow-content h3 {
+        font-size: 32px;
+    }
+    
+    .contact-page-social-follow-content p {
+        font-size: 18px;
+    }
+    
+    .contact-page-social-follow-content ul li a img {
+        max-height: 51px;
+    }
+    .careers-hero-content-left, .careers-hero-content-left {
+        display: none;
+    }
+    .modal-dialog {
+        width: 90%;
+    }
+    .modal-header.modal-header-content {
+        padding: 100px 50px 50px 50px;
+    }
+    
+    .modal-body {
+        padding: 50px;
+    }
+
+}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .hero-content-left {
+        padding-top: 165px;
+    }
+
+    .hero-content-left h1 {
+        font-size: 50px;
+    }
+
+    .hero-content-left p {
+        font-size: 18px;
+    }
+
+    .hero-content-right {
+        margin: 30px 0px 0 0px;
+        padding: 30px;
+    }
+    .subscription-form-1 input[type="submit"]{
+        font-size: 12px;
+    }
+    .subscription-form-1 input[type="email"]{
+        max-width: 200px;
+    }
+    .subscription-form-1 input[type="email"]::placeholder{
+        font-size: 12px;
+    }
+    .hero-content-right-box h2 {
+        font-size: 24px;
+    }
+
+    .brand-voice-left {
+        padding-top: 40px;
+    }
+
+    .brand-voice-left a.button-explore {
+        margin-top: 30px;
+    }
+
+    .we-help-step-1,
+    .we-help-step-2,
+    .we-help-step-3 {
+        margin-bottom: 40px;
+    }
+
+    .we-help-step-5 {
+        margin-bottom: 0;
+    }
+
+    .footer-1 h1 {
+        font-size: 32px;
+        line-height: normal;
+    }
+
+    .footer-1 {
+        text-align: center;
+    }
+    .driving-growth-title {
+        text-align: center;
+    }
+    
+    .driving-growth-title p:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-menu {
+        text-align: center;
+        padding: 0 0 30px 0;
+    }
+
+    .footer-4 p {
+        text-align: right;
+    }
+
+    section.footer-area {
+        padding: 80px 0 20px 0;
+    }
+    .mainmenu {
+        display: none;
+    }
+    .brand-voice-left h1 br {
+        display: none;
+    }
+    
+    .brand-voice-left h1 {
+        font-size: 35px;
+    }
+    
+    .brand-voice-left {
+        text-align: center;
+    }
+    
+    .we-help-title h1 {
+        font-size: 35px;
+    }
+    
+    .we-help-title {
+        text-align: center;
+    }
+    .driving-growth-title {
+        text-align: center;
+    }
+    .about-hero-content h1 {
+        font-size: 50px;
+        line-height: normal;
+    }
+    
+    .work-with-us-right-content {
+        margin-bottom: 50px;
+    }
+    
+    .work-with-us-left-content:after {
+        height: 100%;
+    }
+    
+    .crisptv-media-single-content {
+        width: 100%;
+    }
+    .blog-hero-content h1 {
+        font-size: 100px;
+    }
+    
+    .blog-hero-content {
+        padding-top: 80px;
+    }
+    .crisptv-events-content h1 {
+        font-size: 36px;
+        line-height: normal;
+    }
+    .crisptv-events-content h1 br {
+        display: none;
+    }
+    
+    .crisptv-events-content h3 {
+        font-size: 20px;
+        line-height: normal;
+    }
+    .crisptv-events-area{
+        background-position: center left;
+    }
+    .comming-sson-content strong {
+        font-size: 32px;
+    }
+    
+    .comming-sson-content {
+        padding-top: 100px;
+    }
+    .comming-sson-content h3 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    
+    .comming-sson-content p br {
+        display: none;
+    }
+    .projects-hero-content h1 {
+        font-size: 36px;
+        line-height: normal;
+    }
+    
+    .projects-hero-content h3 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .projects-hero-area{
+        height: auto !important;
+    }
+    .project-single-post-text{
+        padding-left: 0 !important;
+    }
+    .project-single-post-img{
+        margin-bottom: 30px;
+    }
+    .projects-single-post{
+        margin-bottom: 30px;
+    }
+    .project-single-post-text h2 {
+        font-size: 30px;
+        line-height: normal;
+    }
+    .what-we-do-hero-right-img {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+    
+    .what-we-do-hero-right {
+        position: unset;
+    }
+    
+    .what-we-do-hero-left img {
+        position: unset;
+        margin: 20px 0;
+    }
+    
+    section.what-we-do-hero-area {
+        text-align: center;
+        background:linear-gradient(to top, #CBD4DB 50%, #fff 50%)
+    }
+    
+    .our-services-title-content {
+        padding: 0 0 35px 0;
+    }
+    
+    section.our-services-area {
+        text-align: center;
+    }
+    .what-we-do-hero-left h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+    
+    .what-we-do-hero-left p {
+        padding: 0;
+    }
+    
+    .our-services-title-content h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+    
+    .counter-number span {
+        font-size: 40px;
+        line-height: normal;
+    }
+    
+    .single-counter-box {
+        margin-bottom: 30px;
+    }
+    
+    section.counter-area {
+        padding: 60px 0 30px 0;
+    }
+    section.academy-hero-area {
+        text-align: center;
+        padding: 50px 0;
+    }
+    
+    section.employable-area {
+        padding: 70px 0;
+        text-align: center;
+    }
+    
+    .employable-content-left {
+        padding: 0 0 50px 0;
+    }
+    .academy-hero-content-left h1 {
+        font-size: 36px;
+        line-height: normal;
+    }
+    
+    a.enroll-btn {
+        margin: 20px 0 0 0;
+        display: block;
+    }
+    
+    .employable-content-left h1 {
+        font-size: 36px;
+        line-height: normal;
+    }
+    
+    .employable-content-right {
+        padding: 20px;
+    }
+    
+    .employable-content-right-single {
+        padding: 15px;
+    }
+    
+    .employable-user img {
+        margin-right: 15px;
+    }
+    
+    .employable-user h3 {
+        font-size: 18px;
+    }
+    
+    .employable-content-right-single span {
+        font-size: 18px;
+    }
+    
+    .single-testimonial-item p {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .get-in-touch-title h1 {
+        font-size: 42px;
+        line-height: normal;
+    }
+    
+    .contact-form {
+        padding: 30px;
+    }
+    
+    .form-services-btn a {
+        font-size: 14px;
+        padding: 15px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-form input[type="submit"] {
+        font-size: 18px;
+        padding: 15px 40px;
+    }
+    
+    .contact-page-social-follow-content h3 {
+        font-size: 24px;
+    }
+    
+    .contact-page-social-follow-content p {
+        font-size: 18px;
+    }
+    
+    .contact-page-social-follow-content ul li a img {
+        max-height: 51px;
+    }
+    .get-in-touch-title p {
+        font-size: 18px;
+        line-height: normal;
+    }
+    
+    .single-getin-touch {
+        margin-bottom: 35px;
+    }
+    .contact-page-social-follow-content {
+        padding: 70px 20px;
+    }
+    .contact-page-social-follow-content p{
+        font-size: 16px;
+        line-height: normal;
+    }
+    .contact-page-social-follow-content ul li a img{
+        max-height: 35px;
+    }
+    .why-crisptv-title h2 {
+        font-size: 36px;
+    }
+    
+    .team-say-about-crisptv-title h2 {
+        font-size: 32px;
+    }
+    
+    .team-say-about-crisptv-title {
+        padding-bottom: 0;
+    }
+    
+    .boundaries-content h1 {
+        font-size: 36px;
+        line-height: normal;
+    }
+    .careers-hero-content-left, .careers-hero-content-left {
+        display: none;
+    }
+    .careers-hero-area-content h1{
+        font-size: 50px;
+    }
+    .wh-header-top-area .mean-container a.meanmenu-reveal span:after, .wh-header-top-area .mean-container a.meanmenu-reveal span:before, .wh-header-top-area .mean-container a.meanmenu-reveal span{
+        background-color: #000;
+    }
+    .wh-header-top-area .mean-container a.meanmenu-reveal{
+        color: #000;
+    }
+    .modal-header.modal-header-content {
+        padding: 100px 50px 50px 50px;
+    }
+    
+    .modal-body {
+        padding: 50px;
+    }
+    .modal-header.modal-header-content {
+        display: unset;
+    }
+    
+    .single-modal-popup-content {
+        display: unset;
+    }
+    
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
