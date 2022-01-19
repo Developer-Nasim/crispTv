@@ -1,10 +1,21 @@
 
+@php 
+    $genData = App\generalInfo::get()->first();
+    $app_logo = "";
+    $app_name = "";
+    if ($genData && $genData->logo) {
+        $app_logo = $genData->logo;
+    }
+    if ($genData && $genData->name) {
+        $app_name = $genData->name;
+    }
+@endphp
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
         <meta charset="utf-8" />
-        <title>Dastone - Admin & Dashboard Template</title>
+        <title>{{$app_name}} - Admin & Dashboard </title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="" name="author" />
@@ -51,6 +62,21 @@
 .tox.tox-silver-sink.tox-tinymce-aux{
     display: none
 }
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #303e67;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e3ebf6;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
         </style>
 
     </head>
@@ -62,10 +88,9 @@
         <div class="left-sidenav">
             <!-- LOGO -->
             <div class="brand">
-                @php 
-                    $genData = App\generalInfo::get()->first();   
-                @endphp
-                <a href="/admin" class="logo"><img src="{{'/'.$genData->logo}}" alt="logo-small" class="d-block"></a>
+                @if ($app_logo) 
+                    <a href="/admin" class="logo"><img src="{{'/'.$app_logo}}" alt="logo-small" class="d-block"></a>
+                @endif
             </div>
             <!--end logo-->
             <div class="menu-content h-100" data-simplebar>
@@ -98,9 +123,9 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript: void(0);"> <i class="ti-write"></i><span>Tutorials</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <a href="javascript: void(0);"> <i class="ti-write"></i><span>We help</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
                         <ul class="nav-second-level" aria-expanded="false">
-                            <li class="nav-item"><a class="nav-link" href="/admin/tutorial"><i class="ti-control-record"></i>Tutorial</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="/admin/tutorial"><i class="ti-control-record"></i>We help</a></li> 
                         </ul>
                     </li>
                     <li>

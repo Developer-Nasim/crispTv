@@ -75,7 +75,9 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                       <div class="project-single-post-text">
                         <h2>{{$item->title}}</h2>
-                        {!! $item->content !!}
+                        <div class="projectContent">
+                          {!! $item->content !!}
+                        </div>
                         <a href="/projects/{{$item->id}}/{{$item->title}}" class="view-case-study-btn">view case study</a>
                       </div>
                     </div>

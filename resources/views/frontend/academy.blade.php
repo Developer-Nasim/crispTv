@@ -6,6 +6,7 @@
 
 @php   
   $Testimonial  = App\Testimonial::get()->all();
+  $HeroBackg = App\OtherMedia::where('position','academy-hero')->get()->first();
 @endphp
   <!-- hero-area-start-here -->
  
@@ -23,11 +24,13 @@
                         </div>
                   </div>
               </div>
-              <div class="col-lg-5 order-1 order-lg-2 wow fadeInRight" data-wow-delay=".3s">
-                  <div class="academy-hero-content-right">
-                      <img src="assets/img/content-black-man-posing-with-laptop 1.png" alt="">
-                  </div>
-              </div>
+              @if ($HeroBackg) 
+                <div class="col-lg-5 order-1 order-lg-2 wow fadeInRight" data-wow-delay=".3s">
+                    <div class="academy-hero-content-right">
+                        <img src="/{{$HeroBackg->img}}" alt="">
+                    </div>
+                </div>
+              @endif
           </div>
       </div>
   </section>
@@ -80,7 +83,7 @@
             @if (count($Testimonial) > 0) 
               @foreach ($Testimonial as $item) 
                 <div class="single-testimonial-item">
-                  {!! $item->content !!}
+                  <p>“{{$item->content}}”</p> 
                     <div class="testimonial-user">
                       <img src="/{{$item->img}}" alt="">
                       <h4>{{$item->name}} <span>{{$item->title}}</span></h4>

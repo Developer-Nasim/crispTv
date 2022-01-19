@@ -26,20 +26,23 @@ class TutorialController extends Controller{
     // Save
     public function SubmitTutorialData(Request $req){ 
  
-        $imageName;
+        $imageName = "";
            
-        if ($req->img) { 
-            $imgName = "tutorial".time().uniqid().".".$req->img->getClientOriginalExtension();
-            Image::make($req->img)->save('uploaded_imgs/tutorial/'.$imgName);
-            $imageName = "uploaded_imgs/tutorial/".$imgName;
-        } 
-        DB::table('tutorials')->insert([
-            "title"          =>$req->title,
-            "img"            =>$imageName,
-            "content"        =>$req->content,
-            "created_at"     => Carbon::now(),
-        ]); 
- 
+        $getData    = DB::table('tutorials')->get()->all();
+        if (count($getData) < 5) { 
+            if ($req->img) { 
+                $imgName = "tutorial".time().uniqid().".".$req->img->getClientOriginalExtension();
+                Image::make($req->img)->save('uploaded_imgs/tutorial/'.$imgName);
+                $imageName = "uploaded_imgs/tutorial/".$imgName;
+            } 
+            DB::table('tutorials')->insert([
+                "title"          =>$req->title,
+                "sub_title"      =>$req->sub_title,
+                "img"            =>$imageName,
+                "content"        =>$req->content,
+                "created_at"     => Carbon::now(),
+            ]);  
+        }
         return redirect()->back();
  
     }
@@ -62,6 +65,7 @@ class TutorialController extends Controller{
             ['id', $req->id],
         ])->update([
             "title"          =>$req->title,
+            "sub_title"      =>$req->sub_title,
             "img"            =>$imageName,
             "content"        =>$req->content,
             "updated_at"     => Carbon::now(),

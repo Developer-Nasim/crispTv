@@ -11,6 +11,10 @@
   $coreVlu    = App\CoreValues::get()->all();
   $TeamReview = App\TeamReview::get()->all(); 
 
+  $app_name = "";
+  if ($genData && $genData->name) {
+    $app_name = $genData->name;
+  }
 
   $tribeAvater = ""; 
   $tribeAvater2 = "";
@@ -214,7 +218,7 @@
       <div class="row">
         <div class="col wow fadeInUp" data-wow-delay=".3s">
           <div class="team-say-about-crisptv-title text-center">
-            <h2>What our team say about {{$genData->name}}</h2>
+            <h2>What our team say about {{$app_name}}</h2>
           </div>
         </div>
       </div>

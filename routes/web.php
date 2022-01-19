@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend.home');
 });
+Route::get('/get/tutorial/{id}', "FrontRouteController@tutorialDetails");
  
 Route::get('/about-us', function () {
     return view('frontend.about-us');
@@ -130,7 +131,5 @@ Route::prefix('admin')->group(function (){
     Route::post('/submit/editOtherMediaData',"OtherMediaController@SubmitEditData")->middleware('auth');
     Route::get('/delete/other_media/{id}', "OtherMediaController@Delete")->middleware('auth');
 });
-
-
- 
-Auth::routes();
+  
+Auth::routes(); 

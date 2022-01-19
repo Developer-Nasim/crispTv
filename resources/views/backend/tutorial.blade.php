@@ -14,8 +14,12 @@
                             <input type="text" class="form-control" name="title" required placeholder="Title..."/>
                         </div><!--end form-group--> 
                         <div class="form-group">
+                            <label class="form-label">Sub Title</label>
+                            <input type="text" class="form-control" name="sub_title" required placeholder="Sub Title..."/>
+                        </div><!--end form-group--> 
+                        <div class="form-group">
                             <label class="form-label">Tutorial Img</label> 
-                            <input type="file" id="input-file-now" name="img" class="dropify" accept="image/*" required /> 
+                            <input type="file" id="input-file-now" name="img" class="dropify" accept="image/*" /> 
                         </div><!--end form-group-->  
                         <div class="form-group">
                             <label class="form-label">Tutorial Content</label>

@@ -15,7 +15,7 @@
                         </div><!--end form-group--> 
                         <div class="form-group">
                             <label class="form-label">Service Content</label>
-                            <textarea id="basic-conf" name="content" required>Hello world</textarea> 
+                            <textarea name="content" required>Hello world</textarea> 
                         </div><!--end form-group-->  
                         <div class="form-group">
                             <label class="form-label">Icon</label> 

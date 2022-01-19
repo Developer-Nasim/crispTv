@@ -68,7 +68,9 @@
       <div class="row">
         <div class="col wow fadeInUp" data-wow-delay=".3s">
           <div class="crisptv-media-title">
-            <span>{{$genData->name}} media</span>
+            @if ($genData && $genData->name) 
+              <span>{{$genData->name}} media</span>
+            @endif
           </div>
         </div>
       </div>

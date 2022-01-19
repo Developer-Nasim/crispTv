@@ -15,7 +15,7 @@
                         </div><!--end form-group--> 
                         <div class="form-group">
                             <label class="form-label">Content</label>
-                            <textarea id="basic-conf" name="content" required>{{ $getDatas ? $getDatas->content : "" }}</textarea> 
+                            <textarea id="basic-conf" name="content" required>{{ $getDatas ? $getDatas->content : "Hello" }}</textarea> 
                         </div><!--end form-group-->  
                         <div class="form-group">
                             <label class="form-label">Image</label> 

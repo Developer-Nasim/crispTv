@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 @php 
-  $genData = App\generalInfo::get()->first();   
+$app_name = "";
+$app_logo = "";
+$app_logo2 = "";
+$fb = "";
+$tw = "";
+$insta = "";
+$ytb = "";
+  $genData = App\generalInfo::get()->first();
+  if ($genData) {
+    if ($genData->name) {
+        $app_name = $genData->name;
+    }
+    if ($genData->logo) {
+        $app_logo = $genData->logo;
+    }
+    if ($genData->white_logo) {
+        $app_logo2 = $genData->white_logo;
+    }
+    if ($genData->fb) {
+        $fb = $genData->fb;
+    }
+    if ($genData->tw) {
+        $tw = $genData->tw;
+    }
+    if ($genData->insta) {
+        $insta = $genData->insta;
+    }
+    if ($genData->ytb) {
+        $ytb = $genData->ytb;
+    }
+  }   
 @endphp
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <meta name="description" content="Crisp Tv Media">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon/favicon-32x32.png">
-  <title>{{ $genData->name }} @yield('page_title')</title>
+  <meta name="description" content="{{$app_name}} Media">
+  <link rel="shortcut icon" type="image/x-icon" href="/{{$app_logo}}">
+  <title>{{ $app_name }} @yield('page_title')</title>
   <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
   <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
   <link rel="stylesheet" href="{{asset('assets/css/meanmenu.min.css')}}">
@@ -47,8 +77,8 @@
         <div class="col-lg-2 d-flex align-items-center">
           <div class="header-logo">
             <a href="/">
-              <img class="blackLogo" src="/{{$genData->logo}}" alt="{{$genData->logo}}">
-              <img class="whiteLogo" src="/{{$genData->white_logo}}" alt="{{$genData->white_logo}}">
+              <img class="blackLogo" src="/{{$app_logo}}" alt="{{$app_logo}}">
+              <img class="whiteLogo" src="/{{$app_logo2}}" alt="{{$app_logo2}}">
             </a>
           </div>
           <!-- MObile Menu -->
@@ -63,7 +93,7 @@
                 <li><a class="@yield('aboutMenu')" href="/about-us">about us</a></li>
                 <li><a class="@yield('wedoMenu')" href="/what-we-do">what we do</a></li>
                 <li><a class="@yield('eventMenu')" href="/events">events</a></li>
-                <li><a class="@yield('tvMenu')" href="/tv-channel">tv channel</a></li>
+                <li><a class="@yield('tvMenu')" href="http://www.crisptv.tv">tv channel</a></li>
                 <li><a class="@yield('projectMenu')" href="/projects">projects</a></li>
                 <li><a class="@yield('academyMenu')" href="/academy">academy</a></li>
                 <li><a class="@yield('careerMenu')" href="/careers">careers</a></li>
@@ -95,24 +125,24 @@
       <div class="row wow fadeInUp" data-wow-delay=".4s">
         <div class="col-lg-2 col-md-6 col-6 order-2">
           <div class="footer-2">
-            <p>&copy; 2022 - {{ $genData->name }} <span>|</span> </p>
+            <p>&copy; 2022 - {{ $app_name}} <span>|</span> </p>
           </div>
         </div>
         <div class="col-lg-6 order-lg-2 order-1 wow fadeInUp" data-wow-delay=".5s">
           <div class="footer-3">
             <div class="footer-menu">
               <ul>
-                @if ($genData->fb)
-                 <li><a href="{{ $genData->fb }}">FACEBOOK</a></li>
+                @if ($fb)
+                 <li><a href="{{ $fb }}">FACEBOOK</a></li>
                 @endif
-                @if ($genData->tw)
-                 <li><a href="{{ $genData->tw }}">TWITTER</a></li>
+                @if ($tw)
+                 <li><a href="{{ $tw }}">TWITTER</a></li>
                 @endif
-                @if ($genData->insta)
-                 <li><a href="{{ $genData->insta }}">INSTAGRAM</a></li>
+                @if ($insta)
+                 <li><a href="{{ $insta }}">INSTAGRAM</a></li>
                 @endif
-                @if ($genData->ytb)
-                 <li><a href="{{ $genData->ytb }}">YOUTUBE</a></li>
+                @if ($ytb)
+                 <li><a href="{{ $ytb }}">YOUTUBE</a></li>
                 @endif  
               </ul>
             </div>

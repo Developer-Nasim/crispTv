@@ -20,6 +20,7 @@
                                 <option value="event-background">Event Background</option>
                                 <option value="comming-soon">Comming Soon</option>
                                 <option value="project-hero">Project Hero</option>
+                                <option value="academy-hero">Academy Hero</option>
                                 <option value="avaters-tribe">Avaters Tribe</option>
                                 <option value="career-tribe">Career Tribe</option>
                             </select>

@@ -1137,11 +1137,15 @@ a.view-case-study-btn {
     line-height: 24px;
     background-color: #F3F8FA;
     padding: 10px 15px;
-    border-radius: 9px;
-    position: absolute;
-    bottom: 30px;
+    border-radius: 9px;  
+    margin-top: 20px;
+    display: block;
+    width: max-content;
 }
-
+.projectContent {
+    max-height: 250px;
+    overflow: hidden;
+}
 .project-single-post-text h2:after {
     position: absolute;
     left: 0;
@@ -1275,7 +1279,7 @@ a.services-learn-more-btn {
     font-weight: 600;
     letter-spacing: .1em;
     margin-top: 25px;
-    display: inline-block;
+    display: block;
 }
 
 .our-services-single-item {
@@ -2334,10 +2338,11 @@ a.careers-explore-btn:hover{
 .single-modal-popup-content-item, .modal-header-content-item {
     flex-basis: 50%;
 }
-.business-branding button.btn-close{
+.business-branding button.btn-close,
+#weHelp button.btn-close{
     position: absolute;
-    right: 80px;
-    top: 50px;
+    right: 50px;
+    top: 30px;
     background: none;
     opacity: 1;
     height: auto;

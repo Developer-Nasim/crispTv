@@ -12,7 +12,7 @@
                     <input type="text" class="d-none" name="type" value="vision"/>
                         <div class="form-group">
                             <label class="form-label">Content</label>
-                            <textarea id="basic-conf" name="content" required>{{ $getVisionDatas ? $getVisionDatas->content : "" }}</textarea> 
+                            <textarea id="basic-conf" name="content" required>{{ $getVisionDatas ? $getVisionDatas->content : "Hello" }}</textarea> 
                         </div><!--end form-group-->
                         <div class="form-group mb-0">
                             <button type="submit" class="btn btn-primary">

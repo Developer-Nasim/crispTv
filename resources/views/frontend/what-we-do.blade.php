@@ -16,7 +16,7 @@
         <div class="col-lg-5 wow fadeInLeft" data-wow-delay=".3s">
           <div class="what-we-do-hero-left">
             <h1>What we do</h1>
-            @if ($WhatWeDo) 
+            @if ($WhatWeDo && $WhatWeDo->content) 
               {!! $WhatWeDo->content !!}
               @if ($WhatWeDo->another_img) 
                 <img src="/{{$WhatWeDo->another_img}}" alt="">
@@ -27,7 +27,7 @@
         <div class="col-lg-7 wow fadeInRight" data-wow-delay=".3s">
           <div class="what-we-do-hero-right">
             <div class="what-we-do-hero-right-img">
-              @if ($WhatWeDo->main_img) 
+              @if ($WhatWeDo && $WhatWeDo->main_img) 
                 <img src="/{{$WhatWeDo->main_img}}" alt="">
               @endif 
             </div>

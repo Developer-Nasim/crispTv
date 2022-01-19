@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\MyTestMail;
 use DB;
 use Carbon\Carbon;
 use Image; 
@@ -19,6 +21,13 @@ class FrontRouteController extends Controller{
     public function blogFrontSingle($id,$title){
         $getBlog = DB::table('blogs')->where('id',$id)->get()->first();
         return view('singlepages.single-blog', compact('getBlog'));
+    }
+ 
+    
+    // Tutorial Details
+    public function tutorialDetails($id){
+        $getData    = DB::table('tutorials')->where('id', $id)->get()->first();  
+        return response()->json($getData);
     }
  
     // Jobs Front view

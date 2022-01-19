@@ -23,7 +23,7 @@
                         </div><!--end form-group-->  
                         <div class="form-group">
                             <label class="form-label">Content</label>
-                            <textarea id="basic-conf" name="content" required>Hello, World!</textarea> 
+                            <textarea name="content" required>Hello, World!</textarea> 
                         </div><!--end form-group-->  
                         <div class="form-group mb-0">
                             <button type="submit" class="btn btn-primary">
