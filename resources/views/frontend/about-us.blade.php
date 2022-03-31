@@ -87,7 +87,7 @@
             @if ($mission) 
             <div class="crisptv-media-single-content wow fadeInUp" data-wow-delay=".5s">
               <h2>Mission</h2>
-              {!! $vision->content !!}
+              {!! $mission->content !!}
             </div>
             @endif
           </div>

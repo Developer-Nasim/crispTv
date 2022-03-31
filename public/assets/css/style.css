@@ -1230,7 +1230,23 @@ section.our-services-area {
     background-color: #F2F2F2;
     padding: 80px 0 140px 0;
 }
+.social_media_share {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.social_media_share a {
+    display: block;
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 10px;
+}
+
+.social_media_share a img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
 .our-services-title-content h1 {
     font-size: 59px;
     color: #283547;

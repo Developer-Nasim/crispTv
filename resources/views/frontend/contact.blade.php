@@ -86,9 +86,14 @@
                 <div class="col-lg-10 wow fadeInUp" data-wow-delay=".3s">
                     <div class="contact-form">
                         <h3>Contact Form </h3>
-                        @if ($message = Session::get('success')) 
+                        @if ($message = Session::get('message') == "success") 
                             <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                {{ $message }}
+                                {{ "Ah Successfully sent" }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        @elseif ($message = Session::get('message') == "failed") 
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                {{ "Sorry something wents wrong" }}
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
                         @endif

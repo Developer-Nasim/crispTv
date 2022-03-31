@@ -124,6 +124,11 @@ Route::prefix('admin')->group(function (){
     Route::get('/subscribed', "ContactController@Subscribedindex")->middleware('auth');
     Route::get('/delete/subscription/{id}', "ContactController@SubscribedDelete")->middleware('auth');
 
+    // Contact requests
+    Route::get('/contact-requests', "ContactController@ContactRequests")->middleware('auth');
+    Route::get('/delete/contact-request/{id}', "ContactController@ContactReqDelete")->middleware('auth');
+    Route::get('/view/contact-request/{id}', "ContactController@ContactReqView")->middleware('auth');
+
     // Other Medias
     Route::get('/other-medias', "OtherMediaController@index")->middleware('auth'); 
     Route::post('/submit/otherMedia', "OtherMediaController@SubmitOtherMedia")->middleware('auth');

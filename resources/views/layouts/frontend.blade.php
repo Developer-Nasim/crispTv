@@ -93,7 +93,7 @@ $ytb = "";
                 <li><a class="@yield('aboutMenu')" href="/about-us">about us</a></li>
                 <li><a class="@yield('wedoMenu')" href="/what-we-do">what we do</a></li>
                 <li><a class="@yield('eventMenu')" href="/events">events</a></li>
-                <li><a class="@yield('tvMenu')" href="http://www.crisptv.tv">tv channel</a></li>
+                <li><a class="@yield('tvMenu')" href="/tv-channel">tv channel</a></li>
                 <li><a class="@yield('projectMenu')" href="/projects">projects</a></li>
                 <li><a class="@yield('academyMenu')" href="/academy">academy</a></li>
                 <li><a class="@yield('careerMenu')" href="/careers">careers</a></li>

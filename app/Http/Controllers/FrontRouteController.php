@@ -58,6 +58,20 @@ class FrontRouteController extends Controller{
 
     // Contact data
     public function contactData(Request $req){ 
+        $msg = "";
+        $insert = DB::table('contact_requests')->insert([
+            'name'      => $req->name,
+            'email'     => $req->email,
+            'number'    => $req->number,
+            'services'  => $req->services,
+            'message'   => $req->message,
+            'created_at'=> Carbon::now(),
+        ]);
+        if ($insert) {
+            $msg = "success";
+        }else{
+            $msg = "failed";
+        }
         $data = array(
             'name'  => $req->name,
             'email' => $req->email,
@@ -65,9 +79,9 @@ class FrontRouteController extends Controller{
             'services' => $req->services,
             'message' => $req->message,
         );
-        Mail::to('fnnnasim2@gmail.com')->send(new MyTestMail($data));
+        $sendMail = Mail::to('crisptv@crisptv.media')->send(new MyTestMail($data));
         // Mail::send(new MyTestMail($data));
-        return back()->with('success', "Ahh successfully sent");
+        return back()->with('message', $msg);
     }
 
     // Subscribe

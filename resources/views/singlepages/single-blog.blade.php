@@ -22,7 +22,7 @@
 
 
 
-
+{{-- 
               <div id="disqus_thread"></div>
               <script>
                   /**
@@ -42,10 +42,29 @@
                   })();
               </script>
               <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              <script id="dsq-count-scr" src="//crisptv.disqus.com/count.js" async></script>
+              <script id="dsq-count-scr" src="//crisptv.disqus.com/count.js" async></script> --}}
 
+              @php  
+                $slug=$getBlog->title;
+                $articleIdc=$getBlog->title;
+                $base_url = ( isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']=='on' ? 'https' : 'http' ) . '://' .  $_SERVER['HTTP_HOST'];
+                $url = $base_url . $_SERVER["REQUEST_URI"]; 
+              @endphp          
 
-
+              <div class="social_media_share"> 
+                <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo $url; ?>">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" >
+                </a> 
+                <a target="_blank" href="http://twitter.com/share?text=Visit the link &url=<?php echo $url; ?>&hashtags=blog,technosmarter,programming,tutorials,codes,examples,language,development">
+                  <img src="http://assets.stickpng.com/images/5a2fe3efcc45e43754640848.png" >
+                </a> 
+                <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=<?php echo $url; ?>"> 
+                  <img src="https://www.freepnglogos.com/uploads/linkedin-basic-round-social-logo-png-13.png" >
+                </a> 
+                  <a target="_blank" href="http://pinterest.com/pin/create/button/?url=<?php echo $url; ?>">
+                  <img src="https://cdn.freebiesupply.com/logos/large/2x/pinterest-circle-logo-svg-vector.svg" >
+                </a>
+              </ul> 
 
 
           </div>   
